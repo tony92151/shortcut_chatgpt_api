@@ -8,11 +8,16 @@
 
 ## Run
 
+step1: run main service
 ```bash
 python3 main.py
 ```
 
-## Example
+step1: start shortcut
+Run `shortcut`. This will run in an infinite loop, but might be killed by iOS/iPadOS when run in background.
+![image](docs/run.jpg = 100x)
+
+step3: try to call the service
 ```bash
 $ curl  -H "Content-Type: application/json" -X POST http://localhost:9001/question \
   -d '{"question": "What is GitHub? (reply in 1 sentence)"}'
@@ -33,6 +38,9 @@ print('success:', response['success'])
 print('answer:', response['answer'])
 # answer: GitHub is a web-based platform for version control and collaboration that allows developers to store, manage, and share their code repositories.
 ```
+
+Done!!
+
 ## Disclaimers
 This repository is not reverse engineering and is only for experimental purposes only. The intention behind this is to integrate shortcut and host, with no malicious intent or commercial use. The app we use is for experimental purposes. Users should use the official tool/API to do further usage in their work. The repository owner and contributors shall not be held liable for any misuse or misinterpretation of the information presented here. 
 

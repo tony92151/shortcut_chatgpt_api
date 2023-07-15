@@ -2,6 +2,10 @@
 
 ![image](docs/dia.jpg)
 
+![image](docs/shortcut.jpg)
+
+[Download](https://www.icloud.com/shortcuts/9e17a4606a404cad895394dfb10ebc4d)
+
 ## Run
 
 ```bash

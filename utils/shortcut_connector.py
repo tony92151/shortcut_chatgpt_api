@@ -8,6 +8,15 @@ from utils.db import Answer
 api = Flask(__name__)
 
 
+@api.route("/question", methods=["GET"])
+def get_companies():
+    if globalDB.question_is_empty():
+        return json.dumps({"question": "", "uuid": ""})
+    question = globalDB.get_question()
+    logging.warning(f"Push question: {question.question}")
+    return json.dumps({"question": question.question, "uuid": question.uuid})
+
+
 @api.route("/answer", methods=["POST"])
 def pet_question():
     logging.warning(request.is_json)

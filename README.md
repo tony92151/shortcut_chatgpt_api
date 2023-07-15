@@ -1,5 +1,7 @@
 # shortcut_chatgpt_api
 
+![image](docs/dia.jpg)
+
 ## Run
 
 ```bash

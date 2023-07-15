@@ -13,9 +13,10 @@ step1: run main service
 python3 main.py
 ```
 
-step1: start shortcut
+step2: start shortcut
 Run `shortcut`. This will run in an infinite loop, but might be killed by iOS/iPadOS when run in background.
-![image](docs/run.jpg = 100x)
+
+<img src="docs/run.jpg" width="100">
 
 step3: try to call the service
 ```bash

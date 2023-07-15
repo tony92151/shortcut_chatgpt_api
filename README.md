@@ -29,4 +29,6 @@ print('success:', response['success'])
 print('answer:', response['answer'])
 # answer: GitHub is a web-based platform for version control and collaboration that allows developers to store, manage, and share their code repositories.
 ```
+## Disclaimers
+This repository contains software that has been subjected to reverse engineering for experimental purposes only. The intention behind this research is to gain insights into the software's inner workings, with no malicious intent or commercial use. Users should use the official API to do further usage in their work. The repository owner and contributors shall not be held liable for any misuse or misinterpretation of the information presented here. 
 

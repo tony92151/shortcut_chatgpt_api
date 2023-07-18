@@ -1,24 +1,24 @@
 # shortcut_chatgpt_api
 
-This repo intition is to connecting the shortcut services as an api to other devices, using ChatGPT app as an example. The following diagram show that the communication between my laptop and IOS/iPadOS devices. On my laptop, it running two http services. One is the endpoint used to receive a query, and the perpose of the theother one is to communitation with IOS/iPadOS devices. Since the IOS/iPadOS devices connot provide an API service, we make apple devices query question every 1 second and post the answer when the computation is done. This allows the convenience of apple shortcut can extend to other devices.
+This repo's intention is to connect the shortcut services as an API to other devices, using ChatGPT app as an example. The following diagram show the communication between my laptop and IOS/iPadOS devices. On my laptop, it running two http services. One is the endpoint used to receive a query, and the purpose of the other one is to communicate with IOS/iPadOS devices. Since the IOS/iPadOS devices cannot provide an API service, we make Apple devices query question every 1 second and post the answer when the computation is done. This allows the convenience of Apple shortcut can extend to other devices.
 
 ![image](docs/dia.jpg)
 
-If you want to use the following example of implement ChatGPT app, modify the variable in the following image.
+If you want to use the following example of implementing ChatGPT app, modify the variable in the following image.
 ![image](docs/shortcut.jpg)
 
 [Download](https://www.icloud.com/shortcuts/9e17a4606a404cad895394dfb10ebc4d)
 
 ## Run
 
-step1: run main service
+step1: run the main service
 ```bash
 python3 main.py
 ```
 
 step2: start shortcut
 
-Run `ShortcutChatgptAPI` shortcut app. This will run in an infinite loop, but might be killed by iOS/iPadOS when run in background.
+Run `ShortcutChatgptAPI` shortcut app. This will run in an infinite loop but might be killed by iOS/iPadOS when running in the background.
 
 <img src="docs/run.jpg" width="100">
 
